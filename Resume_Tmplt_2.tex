@@ -1,197 +1,116 @@
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
-%
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-
-%----------------------------------------------------------------------------------------
-%	DOCUMENT DEFINITION
-%----------------------------------------------------------------------------------------
-
-\documentclass[a4paper,12pt]{article}
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES
-%----------------------------------------------------------------------------------------
-\usepackage{url}
-\usepackage{parskip}
-
-%other packages for formatting
-\RequirePackage{color}
-\RequirePackage{graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
-
-%tabularx environment
-\usepackage{tabularx}
-
-%for lists within experience section
-\usepackage{enumitem}
-
-% centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X}
-
-%to prevent spillover of tabular into next pages
-\usepackage{supertabular}
-\usepackage{titlesec}
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage[scale=0.915]{geometry}
+\usepackage{import}
 \usepackage{multicol}
-\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{amssymb}
 
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\name{Tahir}{Bangash}
+\title{Full-Stack Developer}
+\address{ }
+\email{tbangash@uwaterloo.ca}
+\social[linkedin][linkedin.com/in/tahir-bangash/]{tahir-bangash}
+\social[github][github.com/tahirbangash]{tahirbangash}
 
-%Setup hyperref package, and colours for links
-\usepackage[unicode, draft=false]{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\usepackage{fontawesome5}
-
-%----------------------------------------------------------------------------------------
-%	BEGIN DOCUMENT
-%----------------------------------------------------------------------------------------
 \begin{document}
+\makecvtitle
 
-% non-numbered pages
-\pagestyle{empty}
-
-%----------------------------------------------------------------------------------------
-%	TITLE
-%----------------------------------------------------------------------------------------
-\begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Tahir Bangash} \\[7.5pt]
-\href{https://github.com/tahirbangash}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/tahir-bangash-a1318a229/}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \
-\href{mailto:tbangash@uwaterloo.ca}{\raisebox{-0.05\height}\faEnvelope \ tbangash@uwaterloo.ca} \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% TECHNICAL SKILLS
-%----------------------------------------------------------------------------------------
 \section{Technical Skills}
-\textbf{Back end:} Python, Java, Go, C++, Node.js, Express, Gin, Git, GORM \\
-\textbf{Front end:} JavaScript, HTML, CSS, React, Redux \\
-\textbf{Databases:} SQL, PostgreSQL
+\cvitem{Back End}{Python, Java, Go, C++, Node.js, Express, Gin, Git, GORM}
+\cvitem{Front End}{JavaScript, HTML, CSS, React, Redux}
+\cvitem{Databases}{SQL, PostgreSQL}
 
-%----------------------------------------------------------------------------------------
-% EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
-
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-\textbf{University of Waterloo} & \hfill Sept 2023 - April 2028 \\
-\multicolumn{2}{@{}X@{}}{BASc Computer Engineering - Co op} \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
 \section{Work Experience}
+\cventry{Jan 2024 -- Present}{Full-Stack Developer}{Calian IT \&\ Cyber Solutions}{North York, Canada}{}{
+    \begin{itemize}
+        \item Responsible for creating dynamic pages in the frontend and developing APIs to connect to the database.
+        \item Created web pages by utilizing technologies such as React and TypeScript(JavaScript), along with libraries like ANT Design, Axios, and React-Redux, to develop organized and interactive webpages.
+        \item Developed APIs using Go and the Gin framework to facilitate frontend integration.
+        \item Implemented CRUD operations using GORM and PostgreSQL to manage database interactions.
+        \item Performed software testing to ensure quality and functionality in peer-developed applications.
+        \item Utilised git and GitHub for version control and collaboration
+        \item Executed tasks and marked progress with Jira
+    \end{itemize}
+}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Full-Stack Developer Intern, Calian , NorthYork, Canada } & \hfill Jan 2024 - Present \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-    \item Developed and maintained company web apps using React, TypeScript, HTML, CSS, Redux, and libraries such as ANTDesign and Bootstrap
-    \item Developed the backend using Go with Gin and Gorm to create APIs to preform CRUD oeprations on Postgress DB
-    \item Collaborated with a team of developers to implement new features and improve existing codebase.
-\end{itemize}
-} \\
-\end{tabularx}
+\cventry{July 2023 -- August 2023}{Clinic Technician}{Dr. Seif Eye Physician and Surgeon}{Burlington, ON}{}{
+    \begin{itemize}
+        \item Downloaded, sorted, and matched test results into patient files for doctor reference.
+        \item Administered Visual Field tests, acuity tests, and eye drops for patients and recorded the results.
+        \item Assisted in minor cosmetic surgeries.
+    \end{itemize}
+}
 
+\cventry{June 2021 -- November 2022}{Back Shop}{Devils Pulpit Golf Association}{Caledon East, ON}{}{
+    \begin{itemize}
+        \item Managed the distribution and return of golf carts from the club.
+        \item Maintained and restocked the driving range with freshly cleaned balls and new equipment.
+        \item Greeted, assisted, and directed members.
+        \item Recharged and restocked all golf carts with clean towels and minor golf equipment.
+    \end{itemize}
+}
 
+\cventry{June 2021 -- August 2021}{Apprentice}{Seif Designs}{Etobicoke, ON}{}{
+    \begin{itemize}
+        \item Demolished old kitchens, flooring, walls, and ceilings.
+        \item Installed cabinets, shelves, and storage units into kitchens, closets, and storage areas.
+        \item Dug and poured footings for structural support beams.
+        \item Moved and transported fragile and heavy materials and products.
+    \end{itemize}
+}
+\cventry{May 2019 -- August 2023}{Event Lead}{MYNA Canada}{}{}{
+    \begin{itemize}
+        \item Lead, planned, budgeted, and executed multiple large-scale events.
+        \item Managed budgets exceeding \$60K, ensuring cost-effective production.
+        \item Coordinated teams to deliver events including a major 5-day summer camp with 200+ participants.
+        \item Lead and planned productive meetings to ensure event success
+    \end{itemize}
+}
 
-%----------------------------------------------------------------------------------------
-% PROJECTS
-%----------------------------------------------------------------------------------------
-
-\section*{Projects}
-\begin{tabularx}{\linewidth}{@{}X r@{}}
-\textbf{Mock Dealership Website} & \href{https://yourprojectlink.com}{View Project} \\
-\multicolumn{2}{@{}X@{}}{
+\section{Projects}
 \begin{itemize}
-    \item Developed a microservice architecture with a React frontend.
-    \item Implemented two backend services: one in Node.js and Express (containerized), another in Django using MongoDB.
-    \item Integrated IBM Watson AI for sentiment analysis on customer reviews.
+    \item \textbf{Mock Dealership Website}
+    \begin{itemize}
+        \item Microservice architecture with React frontend.
+        \item Developed two backend services using Node.js/Express and Django with MongoDB.
+        \item Integrated IBM Watson for sentiment analysis on customer reviews.
+    \end{itemize}
+    \item \textbf{Word Hunt Solution Algorithm}
+    \begin{itemize}
+        \item Flask application with a DFS algorithm.
+        \item Implemented depth-first search to solve word puzzles.
+        \item Enhanced user engagement with interactive UI.
+    \end{itemize}
+    \item \textbf{Weather App}
+    \begin{itemize}
+        \item React application using weather API for real-time data.
+        \item Features location-based weather forecasting.
+        \item User-friendly interface design.
+    \end{itemize}
 \end{itemize}
-} \\
 
-\textbf{Word Hunt Solution Algorithm} & \href{http://tahirbangash.pythonanywhere.com}{View Project} \\
-\multicolumn{2}{@{}X@{}}{
+\subsection{Additional Projects}
 \begin{itemize}
-    \item Created a Flask web application to generate solutions for the game Word Hunt
-    \item Wrote a DFS algorithm to find all valid word chains
-    \item Built a UI for inputting the game puzzle, and for viewing results
-\end{itemize}
-} \\
-
-\textbf{Weather App} & \href{https://tahirbangash.github.io/react_real_time_weather_app/}{View Project} \\
-\multicolumn{2}{@{}X@{}}{
-\begin{itemize}
-    \item Built a React and JavaScript application that utilizes a free weather API.
-    \item Features search functionality to display weather by region.
-    \item Implemented location API to initially load a users current location.
-\end{itemize}
-} \\
-
-\subsection*{Additional Projects}
-\textbf{Frontend Projects} & \\
-\multicolumn{2}{@{}X@{}}{
-\begin{itemize}
-    \item \textbf{Portfolio (HTML) :} Built a personal portfolio webpage using JS, HTML, and CSS.
-    \item \textbf{Todo List (React):} Developed a dynamic todo list application, allowing users to manage tasks interactively.
-    \item \textbf{Shipping Cost Calculator (React):} Created an application to calculate shipping costs based on various parameters.
-\end{itemize}
-} \\
-
-\textbf{Backend Projects} & \\
-\multicolumn{2}{@{}X@{}}{
-\begin{itemize}
+    \item \textbf{Portfolio Website} -- Personal portfolio to showcase software projects.
+    \item \textbf{Todo List App} -- React application for dynamic task management.
+    \item \textbf{Shipping Cost Calculator} -- React application for calculating shipping costs.
     \item \textbf{Book Reviews API (Node.js \& Express):} Designed an API endpoint for handling CRUD operations on book reviews.
     \item \textbf{Posts Management API (Go, Gin, GORM, \& PostgreSQL):} Built a robust backend API for creating and managing posts with full CRUD operations.
 \end{itemize}
-} \\
 
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% VOLUNTEER WORK
-%----------------------------------------------------------------------------------------
-\section{Volunteer Work}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Event Planning, MYNA Canada} & \hfill May 2019 - August 2023 \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-    \item Created budgets for events over \$60K, such as summer camps and other overnight events.
-    \item Used Notion, Excel, Docs, and Canva to create detailed programs for various events.
-    \item Led teams for multiple events, including a 5-day overnight summer camp and a ski trip.
-\end{itemize}
-} \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% AWARDS
-%----------------------------------------------------------------------------------------
-\section{Awards}
-\begin{tabularx}{\linewidth}{@{}X r@{}}
-\textbf{AP Scholar Award, College Board, USA} & June 2022 \\
-\multicolumn{2}{@{}X@{}}{Awarded to students achieving a score of 3 or higher on three or more AP exams.} \\
-\textbf{Certificate of Distinction, The University of Waterloo, ON} & 2022, 2023 \\
-\multicolumn{2}{@{}X@{}}{Awarded to students finishing in the top 25\% of contest writers for the Waterloo math contests.} \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% CERTIFICATIONS
-%----------------------------------------------------------------------------------------
 \section{Certifications}
-\begin{tabularx}{\linewidth}{@{}X r@{}}
-\textbf{IBM Full-Stack Developer Certification} & May 2024 \\
-\multicolumn{2}{@{}X@{}}{This certification program covered a range of topics including advanced full-stack development techniques, focusing on both front-end and back-end technologies.} \\
-\end{tabularx}
+\cvitem{IBM Full-Stack Developer Certification}{May 2024 -- Covered advanced full-stack development techniques, focusing on both front-end and back-end technologies.}
 
+\section{Awards}
+\cvitem{AP Scholar Award, College Board, USA}{June 2022 -- Awarded to students achieving a score of 3 or higher on three or more AP exams.}
+\cvitem{Certificate of Distinction, The University of Waterloo, ON}{2022, 2023 -- Awarded to students finishing in the top 25\% of contest writers for the Waterloo math contests.}
 
-
-\vfill
-\center{\footnotesize Last updated: \today}
+\section{Education}
+\cventry{Sept 2023 -- April 2028}{BASc Computer Engineering - Co-op}{University of Waterloo}{}{}{}
 
 \end{document}
-
