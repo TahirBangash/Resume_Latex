@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Tahir Bangash} \\ \vspace{1pt}
+    \small \href{mailto:tahir.bangash8805@gmail.com}{\underline{tahir.bangash8805@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/tahir-bangash}{\underline{in/tahir-bangash}} $|$
+    \href{https://github.com/tahirbangash}{\underline{github.com/tahirbangash}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON}
+      {BASc in Computer Engineering - Co-op}{Sept. 2023 -- Apr. 2028}
+      \resumeItemListStart
+        \resumeItem{Term Dean's Honour List (Spring 2024) with a 96\% average.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Calian Group}{North York, ON}
+      {Full-Stack Developer}{Jan. 2024 -- Dec. 2024}
+      \resumeItemListStart
+          \resumeItem{Expanded the application backend by developing \textbf{30+ RESTful API endpoints} using \textbf{Gin} and \textbf{Go}, enabling CRUD functionality for 6 new database tables and other existing ones.}
+          \resumeItem{Designed and implemented database schemas with \textbf{GORM} to add support for new features and improve data organization.}
+          \resumeItem{Created \textbf{30+ dynamic screens} using \textbf{React} and \textbf{TypeScript}, including forms and inputs for managing and viewing data to expand the app functionality.}
+          \resumeItem{Implemented user authentication by building secure \textbf{login, multi-factor authentication (MFA)}, and password management pages, ensuring robust access control and data security.}
+          \resumeItem{Implemented an organized state management system using \textbf{Redux}, ensuring consistency and efficiency across the application’s growing feature set.}
+          \resumeItem{Reduced unnecessary re-renders by designing and implementing \textbf{React custom hooks}, improving performance and maintainability.}
+        \resumeItemListEnd
+          \resumeSubheading
+      {Outlier}{Remote}
+      {AI Reinforcement Learning Trainer}{Nov. 2024 -- Present}
+      \resumeItemListStart
+          \resumeItem{Trained AI models by evaluating and providing feedback on mathematical reasoning and problem-solving.}
+          \resumeItem{Designed structured problem-solving prompts to guide AI towards more accurate and efficient responses.}
+          \resumeItem{Developed and solved complex mathematical problems, offering step-by-step solutions to enhance AI understanding.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{University Apartment Subletting Platform} $|$ \emph{React, TypeScript, Go, PostgreSQL}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a web application tailored for university students to sublet apartments during co-op terms}
+            \resumeItem{Implemented secure user authentication and account management using Auth0.}
+            \resumeItem{Designed and managed the backend using Go and GORM to support CRUD operations and database interactions.}
+            \resumeItem{Utilized PostgreSQL for database management, to store relevant data on accounts and postings.}
+            \resumeItem{Integrated AWS S3 for secure image and video storage.}
+            \resumeItem{Built a responsive frontend using React and TypeScript to enable users to create and browse listings seamlessly.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AI Digit Recognition} $|$ \emph{TensorFlow, OpenCV}}{}
+          \resumeItemListStart
+            \resumeItem{Developed an AI model to classify handwritten digits using TensorFlow.}
+            \resumeItem{Utilized OpenCV for image preprocessing to improve model accuracy.}
+            \resumeItem{Designed and trained a neural network from scratch for digit recognition.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Word Puzzle Solver Algorithm} $|$ \emph{Flask, Python}}{}
+          \resumeItemListStart
+            \resumeItem{Built a Flask application to generate all solutions to mobile game Word Hunt. }
+            \resumeItem{ Read a textfile of english words into a trie and dfs searched a grid fo letters and compared against the trie to find valid words.}
+            \resumeItem{Created HTML template files for inputting the puzzle and displaying the solutions using HTML and CSS}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Back End}{: Python, Java, Go, C++, Node.js, Express, Gin, Flask} \\
+     \textbf{Front End}{: JavaScript, HTML, CSS, React, Redux} \\
+     \textbf{Databases}{: SQL, PostgreSQL} \\
+     \textbf{Tools and Platforms}{: GitHub, Postman, Docker}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
