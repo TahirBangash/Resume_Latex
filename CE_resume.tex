@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Tahir Bangash} \\ \vspace{1pt}
+    \small \href{mailto:tahir.bangash8805@gmail.com}{\underline{tahir.bangash8805@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/tahir-bangash}{\underline{in/tahir-bangash}} $|$
+    \href{https://github.com/tahirbangash}{\underline{github.com/tahirbangash}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON}
+      {BASc in Computer Engineering - Co-op}{Sept. 2023 -- Apr. 2028}
+      \resumeItemListStart
+        \resumeItem{Term Dean's Honour List (Spring 2024); cumulative GPA: 92\%.}
+      \resumeItemListEnd
+      
+            % Relevant Coursework
+      \resumeSubSubheading{Relevant Coursework}{}
+      \resumeItemListStart
+        \resumeItem{ECE 250 - Data Structures and Algorithms in C++}
+        \resumeItem{ECE 124 - Digital Logic Design (VHDL, FPGA)}
+        \resumeItem{ECE 222 - Digital Computers (RISC-V, Assembly, Computer Architecture)}
+        \resumeItem{ECE 252 - Systems Programming and Concurrency (C, Linux, Multithreading, IPC)}
+        \resumeItem{ECE 224 - Embedded Microprocessor Systems (C programming on FPGA boards, peripherals, I/O)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Elbe AI}{Toronto, ON}
+      {Full-Stack Developer | 4 month co-op}{May 2025 -- Aug. 2025}
+      \resumeItemListStart
+          \resumeItem{Expanded features from single-party to \textbf{multi-party collaboration}, enabling broader platform adoption.}
+          \resumeItem{Designed and implemented \textbf{version control} with conflict handling to sync counterparties’ data reliably.}
+          \resumeItem{Built new \textbf{Next.js (TypeScript)} pages and components integrated with \textbf{Firebase APIs}.}
+      
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Calian Group}{North York, ON}
+      {Full-Stack Developer | 2 co-op terms and part time in-between}{Jan. 2024 -- Dec. 2024}
+      \resumeItemListStart
+          \resumeItem{Expanded the application backend by developing \textbf{30+ RESTful API endpoints} using \textbf{Gin} and \textbf{Go}, enabling CRUD functionality for 6 new database tables and other existing ones.}
+          \resumeItem{Implemented \textbf{database schemas} to add support for new features and improve data organization.}
+          \resumeItem{Created \textbf{30+ dynamic screens} using \textbf{React} and \textbf{TypeScript} to expand the app functionality.}
+          \resumeItem{Implemented an organized state management system using \textbf{Redux}, improving consistency and organization.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+        {\textbf{PNG File Processing Tools} $|$ \emph{C, Linux, File I/O, System Programming}}{}
+        \resumeItemListStart
+            \resumeItem{Created functions to identify valid PNG files and to concatenate horizontal image strips into a single image.}
+            \resumeItem{Parsed PNG headers and data chunks, handling binary RGBA data and checking for CRC errors in files.}
+            \resumeItem{Used Linux system calls and standard C file I/O to traverse directories, read/write binary files, and automate image processing tasks.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{World Bank Time Series Data Processor} $|$ \emph{C++}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a C++ system to efficiently organize and analyze large World Bank time series datasets.}
+            \resumeItem{Implemented data structures such as trees and maps to enable fast retrieval and complex data comparisons.}
+            \resumeItem{Designed querying methods to identify countries meeting specific statistical conditions and compute aggregated results efficiently.}
+          \resumeItemListEnd
+
+      
+      \resumeProjectHeading
+          {\textbf{Morse Code Converter in Assembly} $|$ \emph{RISC-V, Assembly, Embedded Systems}}{}
+          \resumeItemListStart
+            \resumeItem{Developed an assembly program that converts input text into Morse code.}
+            \resumeItem{Implemented LED blinking patterns to represent Morse code output.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{University Apartment Subletting Platform} $|$ \emph{Flask, React, Go, PostgreSQL}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application tailored for university students to sublet apartments during co-op terms}
+            \resumeItem{Utilised React and TypeScript for the front-end, Go for the backend, and PosegreSQL.}
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Terminal Minesweeper Game} $|$ \emph{C++}}{}
+        \resumeItemListStart
+            \resumeItem{Developed a fully playable Minesweeper game in the terminal using C++.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C, C++, Python, Go, JavaScript, TypeScript, SQL, React} \\
+     \textbf{Test Equipment and Circuit Prototyping}{: Oscilloscopes, DMMs, Function Generators, Breadboarding} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
